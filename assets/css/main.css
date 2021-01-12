@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Nunito+Sans:wght@300&family=Quattrocento+Sans&display=swap');
+
+:target::before {
+	content: "";
+	display: block;
+	height: 70px; /* fixed header height*/
+	margin: -70px 0 0; /* negative fixed header height */
+  }
+
+body {
+	text-align: center;
+	color: black;
+	background-color: white;
+	margin: 0;
+	padding: 0px;
+	font-family: 'Quattrocento Sans', sans-serif;
+
+}
+
+/* whole navbar*/
+
+html {
+	scroll-behavior: smooth;
+}
+
+.navbar-brand {
+	font-family: 'Julius Sans One', sans-serif;
+	font-weight: 800;
+	font-size: xx-large;
+}
+
+.navbar {
+	background-color: #000000;
+	opacity: .75;
+	color: white;
+	/* sticky positioning of navbar*/
+	position: fixed; /* stays in same place despite scroll*/
+	z-index: 1000000;
+	position: -webkit-sticky; /* Safari */
+  	position: sticky;
+	top: 0;
+	font-family: 'Nunito Sans', sans-serif;
+	font-weight: lighter;
+}
+
+.collapse ul {
+	display: inline-flex;   /* Allow the centering to work */
+	margin: 0 auto;
+ }
+ .collapse ul li {
+	display: inline;
+	/*
+	padding-left: 50px;
+	padding-right: 50px;
+	*/
+	opacity: 1 !important;
+	font-weight: bold !important;
+ }
+
+/* homepage */
+.home-section {
+	display: flex;
+	flex-basis: 0 !important; /* equal width flex boxes */
+}
+
+.intro {
+	background-color: rgb(255, 255, 255);
+	margin:0;
+	display: flex;
+	justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.introbox-text {
+	padding: 2%;
+}
+
+.home-image {
+	flex-grow: 1;
+}
+
+.img-responsive {
+	min-width: 100%;
+    height: auto;
+}
+
+/* break 
+.break {
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+*/
+
+/* past projects  */
+.project-tab {
+	background-color: #f0efeb;
+	padding-bottom: 50px;
+}
+.main-header {
+	padding: 50px;
+	font-weight: bold;
+}
+
+.container {
+	width: fit-content;
+	position:relative;
+}
+
+.overlay {
+width: 100%;
+/* since container containing overlay is relatively positioned, making overlay absolute positioned makes it positioned 
+relative to the container 
+https://www.w3schools.com/css/css_positioning.asp , section absolute
+*/
+position: absolute;
+overflow: hidden;
+top: 0;
+left: 0;
+height: 100%;
+transform: scale(0);
+transition: .3s ease;
+}
+
+.overlay-text {
+	padding: 10%;
+}
+
+.container:hover .overlay {
+transform: scale(1);
+opacity: 1;
+}
+.container .overlay {
+background: rgba(0,0,0,0.5);
+}
+
+/* text inside overlay */
+.overlay h1 {
+color: white;
+position: relative;
+font-weight:bold;
+top: 25%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+color: white;
+}
+
+.overlay p {
+color: white;
+position: relative;
+top: 40%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
+}
+
+.container-text {
+  padding: 20px;
+}
+
+/* carousel */
+.carousel-inner {
+	display: flex;
+	align-items: center;
+  }
+  
+.carousel-caption {
+	position: absolute;
+	 background: rgba(0,0,0,0.5);
+	top: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.carousel-caption > h3 {
+	position: relative;
+	top: 10%;
+}
+
+.carousel-item, .carousel-item img {
+	width: 100vw;
+	height: 75vh;
+	object-position: 50% 50%;
+	padding-left: 10%;
+	padding-right: 10%;
+	overflow: auto;
+	object-fit: cover;
+}
+
+.carousel-control-prev, .carousel-control-next {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+/* social buttons */
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 55px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	border-radius: 50%;
+}
+
+.fa:hover {
+	opacity: 0.9;
+}
+
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+
+.fa-linkedin {
+background: #007bb5;
+color: white;
+}
+
+.fa-instagram {
+background: #125688;
+color: white;
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE HTML> 
+<html>
+	<head>
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- my overrides -->
+	<link rel="stylesheet" href="assets/css/main.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- mobile first-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title> Christine Lu </title>
+	</head>
+
+	<body>
+
+		<!-- Nav -->
+		<nav class="navbar navbar-expand-lg navbar-dark" id="nav">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<a class="navbar-brand" href="#home">Christine Lu</a>
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+			  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+				<li class="nav-item">
+					<a class="nav-link" href="#home">INTRODUCTION<span class="sr-only">(current)</span></a>
+				  </li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#projects">PAST PROJECTS<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#carousel-main" tabindex="-1">PICTURES</a>
+				</li>
+			  </ul>
+			</div>
+		  </nav>
+		<!-- Home -->
+		<div class="home-section" id="home">
+			<!-- main text? 
+			<div class="home-main-text">
+				<h1>Hi there!</h1>
+			</div>
+			-->
+				<div class="home-image">
+				<img src="images/fb.jpg" class="img-responsive d-block" alt="fb profile pic">
+				</div>
+
+				<div class="intro">
+					<div class="introbox">
+						<h1> Hey! I'm Christine. </h1>
+						<p class="introbox-text">I'm a junior at UC Berkeley studying Computer Science (and potentially doubling in Data Science)!
+						</br>
+							I'm trying to learn more about frontend, so I'm developing and experiementing with my personal website.
+						</p>
+					</div>
+				</div>
+
+		</div>
+	<!--
+		<div class="break">
+			<h1>See some of my past <strong>projects</strong></h1>
+		</div>
+	-->
+
+		<!-- Portfolio -->
+		<div class="project-tab section" id="projects">
+			<div class="main-header">
+				<h1>Past Projects</h1>
+			</div>
+			
+			<article id="projects">
+				<div class="row">
+
+					<div class="col" id="quiltify">
+							<div class="container">
+								<a href="https://quiltify.appspot.com">
+									<img class="img-fluid content-image" src="images/quiltify.png"/>
+								</a> 
+								<div class="container-text">
+									<h3>Quiltify</h3>
+								</div>
+								
+								<a href="https://quiltify.appspot.com">
+								<div class="overlay">
+									<h1 class="overlay-title">Quiltify</h1>
+									<p class="overlay-text">During my time at CSSI Google in summer 2018, I collaborated with 2 others for our final project. Our final product was <strong>Quiltify</strong>, an app where people can build quilts together by specifying quilt sizes and uploading pictures onto those panels.</p>
+								</div>
+							</a>
+							</div>
+					</div>
+
+					<div class="col" id="song-rec">
+						<div class="container">
+							<a href="https://github.com/christineelu/song-rec">
+								<img class="img-fluid content-image" src="images/music.jpg"/>
+							</a> 
+							<div class="container-text">
+								<h3>Song Recommender</h3>
+							</div>
+							
+							<a href="https://github.com/christineelu/song-rec">
+							<div class="overlay">
+								<h1 class="overlay-title">Song Recommender</h1>
+								<p class="overlay-text">During Spring 2020, I researched the KNN algorithm and modified it to make a song recommender for a given user in the Million Songs Dataset.</div>
+						</a>
+						</div>
+				</div>
+
+						<!-- iframe in the future?
+						<div id="quiltify-hover" style="position: relative; top:-500px; left: 200px;">
+							<iframe src="https://quiltify.appspot.com" width = "250px" height = "250px">
+							</iframe>
+						  </div> 
+						-->
+				</div>
+					<!--<div class="col"></div>-->
+
+			</article>
+				
+		</div>
+
+		<!-- break 
+		<div class="break">
+			<h1>See my<strong> photo album</strong></h1>
+			<p> I'll update this soon :) </p>
+		</div>
+		-->
+
+		<!-- Pictures -->
+
+		<div id="carousel-main" class="carousel" data-ride="carousel">
+			<div class="main-header">
+				<h1>Photo Album</h1>
+				<p>I'll update this soon :)</p>
+			</div>
+			<div class="carousel-inner">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li> 
+			</ol>
+			
+			<div class="carousel-item active" data-interval="5000">
+				<img src="images/field.jpg" class="img-responsive d-block w-100" alt="hmb">
+				<div class="carousel-caption d-none d-md-block">
+					<h3>Half Moon Bay</h3>
+				</div>
+			</div>
+
+			<div class="carousel-item" data-interval="5000">
+				<img src="images/outdoor.jpg" class="img-responsive d-block w-100" alt="outdoors">
+				<div class="carousel-caption d-none d-md-block">
+					<h3>San Francisco</h3>
+				</div>
+			</div>
+			</div>
+			<a class="carousel-control-prev" href="#carousel-main" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="false"></span>
+			<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carousel-main" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="false"></span>
+			<span class="sr-only">Next</span>
+			</a>
+		</div>
+
+		<!-- break -->
+		<div class="break">
+		</div>
+
+		<!-- socials -->
+
+		<footer>
+			<div class="contact" id="contact">
+						<hr />
+						<h6>Find my socials below...</h6>
+						<a href="https://www.facebook.com/csl817/" class="fa fa-facebook"></a>
+						<a href="https://www.linkedin.com/in/christineelu/" class="fa fa-linkedin"></a>
+						<a href="https://www.instagram.com/christinee_lu/" class="fa fa-instagram"></a>
+						<!--<a href="#" class="icon brands fa-github"></a>-->
+						<hr />
+					</div>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+
+<!-- jQuery library 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+Latest compiled JavaScript 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+-->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
